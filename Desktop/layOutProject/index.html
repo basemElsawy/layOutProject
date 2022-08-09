@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Docplanner Group</title>
+    <link
+      href="style.css"
+      rel="stylesheet
+    "
+    />
     <script
       src="https://kit.fontawesome.com/7031694be7.js"
       crossorigin="anonymous"
@@ -28,15 +33,15 @@
           <img
             src="https://www.docplanner.com/img/logo-default-group-en.svg?v=1"
             alt="mainLogo"
-            height="300px"
-            width="300px"
+            width="268px"
+            height="33px"
           />
         </a>
         <nav class="header-nav">
           <ul>
-            <li><a href="#ContentBody">About us</a></li>
-            <li><a href="#ContentBody">Career</a></li>
-            <li><a href="#ContentBody">Departments</a></li>
+            <li><a class="navLink" href="docplanner.com">About us</a></li>
+            <li><a class="navLink" href="#ContentBody">Career</a></li>
+            <li><a class="navLink" href="#ContentBody">Departments</a></li>
           </ul>
         </nav>
       </section>
@@ -45,30 +50,41 @@
       <section class="starting_sect">
         <div class="small-logo">
           <img
+            class="s-logo"
             src="https://www.docplanner.com/img/sygnet.png"
             alt="small Logo"
           />
           <h1>Making the healthcare experience more human</h1>
         </div>
+
         <div class="para-1">
-          <p>
-            We want patients to find the perfect doctor and book an appointment
-            in the most easy way. The patient journey should be enjoyable, and
-            that's why we are always next to them: to help them find the best
-            possible care. Anytime, anywhere.
-          </p>
-          <p>
-            We also help doctors to better manage their practice and build their
-            online reputation. With our integrated end-to-end solution, doctors
-            are able not only to improve their online presence, but also to
-            devote their time to what really matters: their patients.
-          </p>
+          <div class="article-1">
+            <p class="first-p">
+              We want patients to find the perfect doctor and book an
+              appointment in the most easy way. The patient journey should be
+              enjoyable, and that's why we are always next to them: to help them
+              find the best possible care. Anytime, anywhere.
+            </p>
+          </div>
+          <div class="article-2">
+            <p class="second-p">
+              We also help doctors to better manage their practice and build
+              their online reputation. With our integrated end-to-end solution,
+              doctors are able not only to improve their online presence, but
+              also to devote their time to what really matters: their patients.
+            </p>
+          </div>
         </div>
+
         <div class="blocks partitions">
           <div class="block-1">
             <i class="fa-solid fa-people-group"></i>
-            <h1>For patients</h1>
-            <p>Find a doctor, book a visit and solve health-related doubt</p>
+            <h1 id="patients">For patients</h1>
+            <p class="s-para">
+              Find a doctor, book a<br />
+              visit and solve any<br />
+              health-related doubt
+            </p>
             <form>
               <select aria-label="Countries" data-id="countries">
                 <option>Choose country</option>
@@ -81,8 +97,10 @@
           </div>
           <div class="block-2">
             <i class="fa-solid fa-user-doctor"></i>
-            <h1>For doctors</h1>
-            <p>Save time managing visits and cut no-shows by half</p>
+            <h1 id="doctors">For doctors</h1>
+            <p class="s-para">
+              Save time managing visits and cut no-shows by half
+            </p>
             <form>
               <select aria-label="Countries" data-id="countries">
                 <option>Choose country</option>
@@ -95,8 +113,10 @@
           </div>
           <div class="block-3">
             <i class="fa-solid fa-building"></i>
-            <h1>For clinics</h1>
-            <p>Deliver and exceptional patient experience in your clinic</p>
+            <h1 id="clinics">For clinics</h1>
+            <p class="s-para">
+              Deliver and exceptional patient experience in your clinic
+            </p>
             <form>
               <select aria-label="Countries" data-id="countries">
                 <option>2 to 20 specialist</option>
