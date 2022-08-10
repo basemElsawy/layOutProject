@@ -7,9 +7,10 @@
   box-sizing: border-box;
   font-family: 'roboto', arial, sans-serif;
 }
-.headerLink,
-.navLink {
+#navbar {
   position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 .main_logo {
   display: flex;
@@ -74,6 +75,9 @@ li {
 .block-2,
 .block-3 {
   margin: 15px;
+  width: 300px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .blocks {
   display: flex;
@@ -90,9 +94,10 @@ li {
   background-color: #30dcc5;
   font-size: 20px;
   padding: 50px;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: 0.3s ease;
 }
+
 .block-1:hover {
   cursor: pointer;
 
@@ -108,7 +113,7 @@ li {
   color: white;
   background-color: #065cbe;
   font-size: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 50px;
   transition: 0.3s ease;
 }
@@ -121,7 +126,7 @@ li {
   color: white;
   background-color: #000000cd;
   font-size: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 50px;
   transition: 0.3s ease;
 }
@@ -132,4 +137,83 @@ li {
 }
 h2 {
   font-weight: lighter;
+}
+.slct {
+  margin-top: 55px;
+}
+
+select {
+  border: none;
+}
+.lightGreen:active {
+  border: none;
+}
+option {
+  color: black;
+}
+.lightGreen {
+  color: #fff;
+}
+.slct,
+.slct-blck {
+  color: white;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.brand-names {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas:
+    '  text text links links  '
+    '  text text links links  '
+    '  text text links links  ';
+  column-gap: 5px;
+  /* grid-template-columns: repeat(6, 250px);
+  grid-template-rows: repeat(3, 100px); */
+  width: 100%;
+}
+.h1-3 {
+  grid-column: 4/6;
+  margin: 0 10px;
+}
+.brand__names {
+  margin-top: 40px;
+  width: 100%;
+  grid-column: 8/10;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  column-gap: 10px;
+}
+
+.brandLinks {
+  text-decoration: none;
+  padding-right: 10px;
+  font-weight: 800;
+
+  color: #7474749e;
+  opacity: 0.3;
+  transition: 0.5s ease;
+  filter: grayscale(200%);
+}
+
+.brandLinks:hover {
+  color: #30dcc5;
+  opacity: 1;
+  filter: none;
+}
+.mid_section {
+  background-image: url(modified.png);
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-heading {
+  margin-top: 20px;
+}
+.mini-star {
+}
+.mini-star:hover {
+}
+.middle-div {
 }
