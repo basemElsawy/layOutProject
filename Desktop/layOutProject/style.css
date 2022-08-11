@@ -163,34 +163,36 @@ option {
 .brand-names {
   margin-top: 50px;
   display: grid;
-  grid-template-areas:
-    '  text text links links  '
-    '  text text links links  '
-    '  text text links links  ';
+
   column-gap: 5px;
-  /* grid-template-columns: repeat(6, 250px);
-  grid-template-rows: repeat(3, 100px); */
-  width: 100%;
+  grid-template-columns: repeat(6, 250px);
+  grid-template-rows: repeat(3, 100px);
+  width: auto;
 }
 .h1-3 {
-  grid-column: 4/6;
+  grid-column: 2/4;
   margin: 0 10px;
 }
 .brand__names {
   margin-top: 40px;
   width: 100%;
-  grid-column: 8/10;
+  grid-column: 4/6;
   display: flex;
   flex-wrap: wrap;
   height: 100px;
   column-gap: 10px;
+  row-gap: 50px;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
-
+.clini {
+  margin-bottom: 5px;
+}
 .brandLinks {
   text-decoration: none;
   padding-right: 10px;
   font-weight: 800;
-
+  justify-self: baseline;
   color: #7474749e;
   opacity: 0.3;
   transition: 0.5s ease;
@@ -211,9 +213,21 @@ option {
 .section-heading {
   margin-top: 20px;
 }
-.mini-star {
+
+.heading1 {
+  font-size: 1.5rem;
 }
-.mini-star:hover {
-}
-.middle-div {
+.con1,
+.con2,
+.con3,
+.con4 {
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.581);
+  margin: 3rem;
+  margin-right: 4rem;
+  color: #7474749e;
+  width: 250px;
+  font-size: 0.8em;
+  padding: 40px;
+  background-color: #ffffff;
 }
